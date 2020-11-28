@@ -2,8 +2,8 @@
 //  TitleTopiceTableViewCell.swift
 //  Cargram
 //
-//  Created by Batuhan Ketahte 28.11.2020
-//  Copyright © 2020 Batuhan Ketahte. All rights reserved.
+//  Created by Ferhan Akkan on 15.05.2020.
+//  Copyright © 2020 Ferhan Akkan. All rights reserved.
 //
 
 import UIKit

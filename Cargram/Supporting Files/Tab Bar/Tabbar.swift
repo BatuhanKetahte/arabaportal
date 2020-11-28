@@ -34,9 +34,9 @@ class Tabbar {
             
             tabController.viewControllers = [UINavigationController(rootViewController: explore),UINavigationController(rootViewController: meeting),UINavigationController(rootViewController: posts),UINavigationController(rootViewController: todo),UINavigationController(rootViewController: forum)]
             
-            tabController.tabBar.backgroundColor = .gray
-            tabController.tabBar.barTintColor = .darkGray
-            tabController.tabBar.tintColor = .orange
+            tabController.tabBar.backgroundColor = .red
+            tabController.tabBar.barTintColor = .red
+            tabController.tabBar.tintColor = .white
             
             tabController.tabBar.items?[0].image = UIImage(named: "explore")
             tabController.tabBar.items![0].selectedImage = UIImage(named: "explore")
@@ -65,9 +65,9 @@ class Tabbar {
             
             tabController.viewControllers = [UINavigationController(rootViewController: explore),meeting,posts,UINavigationController(rootViewController: todo),forum]
             
-            tabController.tabBar.backgroundColor = .gray
-            tabController.tabBar.barTintColor = .darkGray
-            tabController.tabBar.tintColor = .orange
+            tabController.tabBar.backgroundColor = .red
+            tabController.tabBar.barTintColor = .red
+            tabController.tabBar.tintColor = .white
             
             tabController.tabBar.items?[0].image = UIImage(named: "explore")
             tabController.tabBar.items![0].selectedImage = UIImage(named: "explore")

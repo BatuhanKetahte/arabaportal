@@ -90,7 +90,7 @@ extension MessageTableViewCell {
             make.trailing.equalToSuperview().inset(5)
         }
         writenByLabel.font = .boldSystemFont(ofSize: 15)
-        writenByLabel.textColor = .black
+        writenByLabel.textColor = .white
         writenByLabel.textAlignment = .left
     }
     
@@ -112,14 +112,14 @@ extension MessageTableViewCell {
         leftImageView.snp.makeConstraints { (make) in
             make.height.width.equalTo(40)
         }
-        leftImageView.makeRoundWithBorder(borderColor: .black, borderWidth: 3, cornerRadius: 20)
+        leftImageView.makeRoundWithBorder(borderColor: .white, borderWidth: 3, cornerRadius: 20)
         leftImageView.contentMode = .scaleAspectFit
         leftImageView.image = UIImage(named: "avatar")
     }
     
     private func setMessageBubble() {
         stackView.addArrangedSubview(messageBubble)
-        messageBubble.backgroundColor = .orange
+        messageBubble.backgroundColor = .white
         messageBubble.cornerRadius = 15
         messageBubble.addSubview(messageLabel)
         messageLabel.snp.makeConstraints { (make) in
@@ -127,7 +127,7 @@ extension MessageTableViewCell {
             make.trailing.bottom.equalToSuperview().inset(10)
         }
         messageLabel.textAlignment = .left
-        messageLabel.textColor = .black
+        messageLabel.textColor = .red
         messageLabel.numberOfLines = 0
         messageLabel.font = .systemFont(ofSize: 15)
     }
@@ -137,7 +137,7 @@ extension MessageTableViewCell {
         rightImageView.snp.makeConstraints { (make) in
             make.height.width.equalTo(40)
         }
-        rightImageView.makeRoundWithBorder(borderColor: .black, borderWidth: 3, cornerRadius: 20)
+        rightImageView.makeRoundWithBorder(borderColor: .white, borderWidth: 3, cornerRadius: 20)
         rightImageView.contentMode = .scaleAspectFit
         rightImageView.image = UIImage(named: "avatar")
     }

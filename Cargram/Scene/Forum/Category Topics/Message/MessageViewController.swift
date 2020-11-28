@@ -70,7 +70,7 @@ extension MessageViewController {
     
     internal func setSenderView() {
         
-        customView.backgroundColor = .gray
+        customView.backgroundColor = .red
         view.addSubview(customView)
         
         customView.snp.makeConstraints { (make) in

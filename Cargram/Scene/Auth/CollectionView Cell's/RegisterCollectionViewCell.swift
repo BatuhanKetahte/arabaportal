@@ -136,8 +136,8 @@ extension RegisterColletionViewCell {
             make.centerY.equalTo(userAgreementLabel)
             make.leading.equalTo(userAgreementLabel.snp.trailing).offset(10)
         }
-        userAgreementCheckBox.onTintColor = .orange
-        userAgreementCheckBox.onCheckColor = .orange
+        userAgreementCheckBox.onTintColor = .red
+        userAgreementCheckBox.onCheckColor = .red
     }
     
     private func setRememberLabel() {
@@ -157,8 +157,8 @@ extension RegisterColletionViewCell {
             make.centerY.equalTo(rememberLabel)
             make.leading.equalTo(rememberLabel.snp.trailing).offset(10)
         }
-        checkBox.onTintColor = .orange
-        checkBox.onCheckColor = .orange
+        checkBox.onTintColor = .red
+        checkBox.onCheckColor = .red
     }
     
     private func setRegisterButton() {
@@ -206,7 +206,7 @@ extension RegisterColletionViewCell {
             make.width.equalTo(60)
         }
         logInButton.setTitle("Log In", for: .normal)
-        logInButton.setTitleColor(.orange, for: .normal)
+        logInButton.setTitleColor(.red, for: .normal)
         logInButton.addTarget(self, action: #selector(logInPressed), for: .touchUpInside)
     }
 }

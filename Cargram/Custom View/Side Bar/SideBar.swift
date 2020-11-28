@@ -56,7 +56,7 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = .gray
+        self.backgroundColor = .red
         self.clipsToBounds=true
         
         titleArr = ["\(Auth.auth().currentUser?.displayName! ?? "Profile")","Settings","Rate Us", "Donate", "Sign Out"]
@@ -94,11 +94,11 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         if indexPath.row == 0 {
-            cell.backgroundColor = .gray
+            cell.backgroundColor = .clear
             
             let cellImg: UIImageView!
             cellImg = UIImageView(frame: CGRect(x: 15, y: 10, width: 80, height: 80))
-            cellImg.makeRoundWithBorder(borderColor: .orange, borderWidth: 3, cornerRadius: 40)
+            cellImg.makeRoundWithBorder(borderColor: .white, borderWidth: 3, cornerRadius: 40)
             cellImg.contentMode = .scaleAspectFill
             DispatchQueue.main.async {
                if let data = UserDefaults.standard.value(forKey: "profileImage") as? Data{
@@ -114,9 +114,9 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
             cell.addSubview(cellLbl)
             cellLbl.text = titleArr[indexPath.row]
             cellLbl.font = UIFont.boldSystemFont(ofSize: 17)
-            cellLbl.textColor=UIColor.orange
+            cellLbl.textColor=UIColor.white
         } else {
-            cell.backgroundColor = .gray
+            cell.backgroundColor = .clear
             
             let cellImg: UIImageView!
             cellImg = UIImageView(frame: CGRect(x: 15, y: cell.frame.height/2-15, width: 30, height: 30))
@@ -128,7 +128,7 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
             cell.addSubview(cellLbl)
             cellLbl.text = titleArr[indexPath.row]
             cellLbl.font = UIFont.boldSystemFont(ofSize: 17)
-            cellLbl.textColor=UIColor.orange
+            cellLbl.textColor=UIColor.white
         }
         return cell
     }
